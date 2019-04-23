@@ -1,0 +1,19 @@
+{
+  "name": "first-custom-element",
+  "version": "0.0.1",
+  "description": "having fun with custom elements",
+  "main": "tooltip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moghan/first-custom-element.git"
+  },
+  "author": "moghan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moghan/first-custom-element/issues"
+  },
+  "homepage": "https://github.com/Moghan/first-custom-element#readme"
+}
