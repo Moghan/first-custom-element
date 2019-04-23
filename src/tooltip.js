@@ -33,13 +33,13 @@ class Tooltip extends HTMLElement {
         this.shadowRoot.appendChild(tooltipIcon);
     }
 
-    _showTooltip = () => {
+    _showTooltip() {
         this._tooltipContainer = document.createElement('div');
         this._tooltipContainer.textContent = this._tooltipText;
         this.shadowRoot.appendChild(this._tooltipContainer);
     }
 
-    _hideTooltip = () => {
+    _hideTooltip() {
         this.shadowRoot.removeChild(this._tooltipContainer);
     }
 }

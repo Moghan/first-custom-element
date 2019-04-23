@@ -1,10 +1,11 @@
 {
   "name": "first-custom-element",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "having fun with custom elements",
-  "main": "tooltip.js",
+  "main": "lib/tooltip.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/Moghan/first-custom-element/issues"
   },
-  "homepage": "https://github.com/Moghan/first-custom-element#readme"
+  "homepage": "https://github.com/Moghan/first-custom-element#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-custom-element-classes": "^0.1.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-custom-element-classes",
+      "transform-es2015-classes"
+    ]
+  }
 }
